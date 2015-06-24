@@ -31,3 +31,17 @@
       root.async = _async;
   }
 }());
+
+
+
+//Example 2
+(function() {
+
+var myModule = { ... }
+
+if (typeof exports == 'undefined') {
+    window.myModule = myModule;
+  } else {
+    module.exports = myModule;
+  }
+})()
